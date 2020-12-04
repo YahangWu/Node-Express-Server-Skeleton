@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "linebreak-style": "off",
+    "no-console": ["off"],
+    "comma-dangle": ["error", "never"],
+    "max-len": [
+      "error",
+      {
+        "ignoreComments": true,
+        "code": 100
+      }
+    ]
+  },
+  "env": {
+    "node": true,
+    "mocha": true,
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "plugins": ["prettier", "security"],
+  "extends": [
+    "airbnb-base",
+    "plugin:prettier/recommended",
+    "plugin:security/recommended"
+  ]
+}
